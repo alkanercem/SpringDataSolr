@@ -15,7 +15,7 @@ path/to/solr/bin
 ## 3. Start Solr in Local Mode
 Start Solr in local mode by running the following command:
 ```bash
-./solr start
+solr start
 ```
 ## 4.Create a New Solr Core
 ```bash
