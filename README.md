@@ -11,16 +11,16 @@ Download the latest version of Solr from the [official website](http://lucene.ap
 Open a terminal or command prompt and navigate to the Solr installation directory.
 ```bash
 path/to/solr/bin
-
+```
 ## 3. Start Solr in Local Mode
 Start Solr in local mode by running the following command:
-
+```bash
 ./solr start
-
+```
 ## 4.Create a New Solr Core
-
+```bash
 bin/solr create -c products
-
+```
 ## REST API Endpoints
 
 ### 1. Create Product
