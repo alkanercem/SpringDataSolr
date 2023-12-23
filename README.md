@@ -9,7 +9,7 @@ Download the latest version of Solr from the [official website](http://lucene.ap
 ## 2. Navigate to Solr Installation Directory
 
 Open a terminal or command prompt and navigate to the Solr installation directory.
-
+```bash
 path/to/solr/bin
 
 ## 3. Start Solr in Local Mode
@@ -21,24 +21,18 @@ Start Solr in local mode by running the following command:
 
 bin/solr create -c products
 
-# API Endpoints
+## REST API Endpoints
 
-## Get Products Updated After Time
-Retrieve a list of products updated after a specific timestamp.
+### 1. Create Product
 
-URL: /products/updatedAfterTime
-Method: GET
-Query Parameter:
-timestamp (long): The timestamp to filter products.
+- **Endpoint:** `POST /products/add`
+- **Description:** Adds a new product.
+- **Request Body:** JSON object with product details (e.g., {"id": "ProductId", "updatedAt": 1577836800000})
+- **Success Response:** `200 OK`, Product added successfully.
 
-## Add Product
-Add a new product.
+### 2. Get Products Updated After Time
 
-URL: /products/add
-Method: POST
-Request Body:
-```json
-{
-  "id": "ProductId",
-  "updatedAt": 1641674941000
-}
+- **Endpoint:** `GET /products/updatedAfterTime`
+- **Description:** Retrieves products updated after a specific timestamp.
+- **Query Parameter:** - `timestamp` (long): Timestamp to filter products. (e.g.,http://localhost:8080/products/updatedAfterTime?timestamp=1577836800000)
+- **Success Response:** `200 OK`, List of products updated after the specified time.
