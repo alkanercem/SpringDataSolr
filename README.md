@@ -2,6 +2,12 @@
 
 A Simple Spring Boot project that retrieves data from Solr based on a long-type variable,  fetching records the entered day to today and adding new data.
 
+# Requirement
+
+- Java 17
+- Spring Boot
+- Solr
+
 ## 1. Download and Install Solr
 
 Download the latest version of Solr from the [official website](http://lucene.apache.org/solr/). Once downloaded, extract the contents to a directory of your choice.
